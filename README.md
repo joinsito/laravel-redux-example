@@ -2,5 +2,6 @@
 Laravel-Redux example app
 
 #TODO 
-JWT auth
-Login React Form
+- JWT auth
+- Login React Form
+
