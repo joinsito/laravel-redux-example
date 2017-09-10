@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+Pimport React, { Component } from 'react';
 import { Field, FieldArray, reduxForm } from 'redux-form';
 import { fetchReport, editReport, fetchPatients } from '../actions/index';
 import {PropTypes} from 'prop-types';

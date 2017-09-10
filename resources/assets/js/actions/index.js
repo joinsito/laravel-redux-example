@@ -4,18 +4,12 @@ export const FETCH_REPORTS = "fetch_reports";
 export const FETCH_REPORT = 'fetch_report';
 export const CREATE_REPORT = 'create_report';
 export const EDIT_REPORT = 'edit_report';
-<<<<<<< HEAD
 export const DELETE_REPORT = 'delete_report';
-=======
->>>>>>> cfd6cf5483203dbd042d4e23fe8b1703f314b771
 export const FETCH_PATIENTS = "fetch_patients";
 export const FETCH_PATIENT = "fetch_patient";
 export const CREATE_PATIENT = "create_patient";
 export const EDIT_PATIENT = "create_patient";
-<<<<<<< HEAD
 export const DELETE_PATIENT = 'delete_patient';
-=======
->>>>>>> cfd6cf5483203dbd042d4e23fe8b1703f314b771
 
 
 
