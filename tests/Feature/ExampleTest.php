@@ -16,6 +16,7 @@ class ExampleTest extends TestCase
     {
         $response = $this->get('/');
 
+<<<<<<< HEAD
         $response->assertStatus(302);
     }
 
@@ -28,6 +29,8 @@ class ExampleTest extends TestCase
     {
         $response = $this->get('/login');
 
+=======
+>>>>>>> cfd6cf5483203dbd042d4e23fe8b1703f314b771
         $response->assertStatus(200);
     }
 }

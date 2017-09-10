@@ -11,7 +11,11 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
     </head>
+<<<<<<< HEAD
     <div id="app" >
+=======
+    <div id="app" style="margin:20px;">
+>>>>>>> cfd6cf5483203dbd042d4e23fe8b1703f314b771
         <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container">
                 <ul class="nav navbar-nav navbar-righ">
@@ -19,6 +23,7 @@
                     @if (Auth::user()['admin'] == 1)
                         <li><a href="/patients">Patient list</a></li>
                     @endif
+<<<<<<< HEAD
                     @if (Auth::check())
                         <li><a href="{{ url('/logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();">Logout</a></li>
                         <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">{{ csrf_field() }}</form>
@@ -28,6 +33,12 @@
             </div>
         </nav>
         <div class="container" id="reactcontainer" style="margin-top:80px;">
+=======
+                </ul>
+            </div>
+        </nav>
+        <div class="container" id="reactcontainer">
+>>>>>>> cfd6cf5483203dbd042d4e23fe8b1703f314b771
 
         </div>
     </div>

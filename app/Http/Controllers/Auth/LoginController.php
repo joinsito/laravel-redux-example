@@ -28,7 +28,6 @@ class LoginController extends Controller
      */
     protected $redirectTo = '/reports';
 
-
     /**
      * Create a new controller instance.
      *
@@ -41,7 +40,7 @@ class LoginController extends Controller
 
     public function username()
     {
-        return 'name';
+        return 'username';
     }
 
     public function showLoginForm()

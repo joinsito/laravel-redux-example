@@ -38,6 +38,7 @@ Route::get('/reportedit/{reportId}', function () {
     return view('welcome');
 })->middleware('auth');
 Route::get('/pdfexport/{pdfId}', 'ReportsController@pdfexport')->middleware('auth');
+<<<<<<< HEAD
 Route::get('/sendemail/{reportId}', 'ReportsController@sendemail')->middleware('auth');
 
 // API for reports
@@ -55,6 +56,19 @@ Route::post('/api/newpatient', 'PatientsController@addpatient')->middleware('adm
 Route::put('/api/editpatient/{patientId}', 'PatientsController@editpatient')->middleware('admin');
 Route::delete('/api/deletepatient/{patientId}', 'PatientsController@deletepatient')->middleware('admin');
 
+=======
+// API for reports
+Route::get('/api/reports', 'ReportsController@getlist')->middleware('auth');
+Route::get('/api/report/{reportId}', 'ReportsController@getdetails')->middleware('auth');
+Route::post('/api/newreport', 'ReportsController@addreport')->middleware('auth');
+Route::put('/api/editreport/{reportId}', 'ReportsController@editreport')->middleware('auth');
+
+// API for Patients
+Route::get('/api/patients', 'PatientsController@getlist')->middleware('auth');
+Route::get('/api/patients/{patientId}', 'PatientsController@getpatient')->middleware('auth');
+Route::post('/api/newpatient', 'PatientsController@addpatient')->middleware('auth');
+Route::put('/api/editpatient/{patientId}', 'PatientsController@editpatient')->middleware('auth');
+>>>>>>> cfd6cf5483203dbd042d4e23fe8b1703f314b771
 
 
 

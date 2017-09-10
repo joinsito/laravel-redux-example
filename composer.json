@@ -6,11 +6,17 @@
     "type": "project",
     "require": {
         "php": ">=7.0.0",
+<<<<<<< HEAD
         "barryvdh/laravel-dompdf": "^0.8.1",
         "fideloper/proxy": "~3.3",
         "laravel/framework": "5.5.*",
         "laravel/tinker": "~1.0",
         "phpmailer/phpmailer": "dev-master"
+=======
+        "fideloper/proxy": "~3.3",
+        "laravel/framework": "5.5.*",
+        "laravel/tinker": "~1.0"
+>>>>>>> cfd6cf5483203dbd042d4e23fe8b1703f314b771
     },
     "require-dev": {
         "filp/whoops": "~2.0",

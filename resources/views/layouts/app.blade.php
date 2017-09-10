@@ -12,7 +12,10 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+<<<<<<< HEAD
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+=======
+>>>>>>> cfd6cf5483203dbd042d4e23fe8b1703f314b771
 </head>
 <body>
     <div id="app">

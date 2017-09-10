@@ -4,12 +4,18 @@ export const FETCH_REPORTS = "fetch_reports";
 export const FETCH_REPORT = 'fetch_report';
 export const CREATE_REPORT = 'create_report';
 export const EDIT_REPORT = 'edit_report';
+<<<<<<< HEAD
 export const DELETE_REPORT = 'delete_report';
+=======
+>>>>>>> cfd6cf5483203dbd042d4e23fe8b1703f314b771
 export const FETCH_PATIENTS = "fetch_patients";
 export const FETCH_PATIENT = "fetch_patient";
 export const CREATE_PATIENT = "create_patient";
 export const EDIT_PATIENT = "create_patient";
+<<<<<<< HEAD
 export const DELETE_PATIENT = 'delete_patient';
+=======
+>>>>>>> cfd6cf5483203dbd042d4e23fe8b1703f314b771
 
 
 
@@ -44,6 +50,7 @@ export function editReport(id,props) {
         payload: request
     };
 }
+<<<<<<< HEAD
 export function deleteReport(id) {
     const request = axios.delete(`${APP_URL}/api/deletereport/${id}`);
     return {
@@ -51,6 +58,8 @@ export function deleteReport(id) {
         payload: request
     };
 }
+=======
+>>>>>>> cfd6cf5483203dbd042d4e23fe8b1703f314b771
 
 // Patients methods
 export function fetchPatients() {
@@ -85,6 +94,7 @@ export function editPatient(id,props) {
         type: EDIT_PATIENT,
         payload: request
     };
+<<<<<<< HEAD
 }
 export function deletePatient(id) {
     const request = axios.delete(`${APP_URL}/api/deletepatient/${id}`);
@@ -92,4 +102,6 @@ export function deletePatient(id) {
         type: DELETE_PATIENT,
         payload: request
     };
+=======
+>>>>>>> cfd6cf5483203dbd042d4e23fe8b1703f314b771
 }
