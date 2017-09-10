@@ -11,27 +11,15 @@
                     <form class="form-horizontal" method="POST" action="{{ route('login') }}">
                         {{ csrf_field() }}
 
-<<<<<<< HEAD
-                        <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
-                            <label for="name" class="col-md-4 control-label">Username</label>
+                        <div class="form-group{{ $errors->has('username') ? ' has-error' : '' }}">
+                            <label for="username" class="col-md-4 control-label">Username</label>
 
                             <div class="col-md-6">
-                                <input autocomplete="off" id="name" type="text" class="form-control" name="name" value="{{ old('name') }}" required autofocus>
+                                <input autocomplete="off" id="username" type="text" class="form-control" name="name" value="{{ old('username') }}" required autofocus>
 
-                                @if ($errors->has('name'))
+                                @if ($errors->has('username'))
                                     <span class="help-block">
-                                        <strong>{{ $errors->first('name') }}</strong>
-=======
-                        <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
-                            <label for="email" class="col-md-4 control-label">E-Mail Address</label>
-
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required autofocus>
-
-                                @if ($errors->has('email'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('email') }}</strong>
->>>>>>> cfd6cf5483203dbd042d4e23fe8b1703f314b771
+                                        <strong>{{ $errors->first('username') }}</strong>
                                     </span>
                                 @endif
                             </div>
@@ -78,13 +66,4 @@
         </div>
     </div>
 </div>
-<<<<<<< HEAD
-
-<script type="text/javascript">
-    (function(){function h(a){if(this.value){var b=window.event?a.which:a.keyCode,c=this;clearTimeout(g);8==b||(46==b||16==b||17==b||18==b||20==b||91==b)||(g=setTimeout(function(){if(13==b)c.setSelectionRange(c.value.length,c.value.length);else if(!(36<b&&41>b)){var a=c.value,d;a:{d=0;for(var e;d<f.length;d++)if(e=f[d].toLowerCase().indexOf(a.toLowerCase()),0===e&&a.length!=f[d].length){d=f[d];break a}d=null}null!==d&&(c.value=d,c.setSelectionRange(a.length,d.length))}},200))}}function e(a,b){b instanceof
-    Array&&(f=b);var c=h;a.attachEvent?a.attachEvent("onkeyup",function(){c.call(a)}):a.addEventListener&&a.addEventListener("keyup",c,!1)}var f=[],g;"jQuery"in window?jQuery.fn.simpleAutocomplete=function(a){this.each(function(b,c){e(c,a)});return this}:"MooTools"in window?Element.implement({simpleAutocomplete:function(a){e(this,a);return this}}):window.simpleAutocomplete=e})();
-    $("#name").simpleAutocomplete({!!json_encode($userlist)!!})
-</script>
-=======
->>>>>>> cfd6cf5483203dbd042d4e23fe8b1703f314b771
 @endsection
