@@ -14,9 +14,6 @@ const renderField = ({label,input,placeholder,name,meta: { touched, error, warni
 )
 
 class PatientsNew extends Component {
-    static contextTypes = {
-        router: PropTypes.object
-    };
     onSubmit(props) {
         this.props.createPatient(props)
             .then((result) => {
@@ -65,7 +62,9 @@ function validate(values) {
 
     return errors;
 }
-
+static contextTypes = {
+    router: PropTypes.object
+};
 PatientsNew =  reduxForm({
     form: 'PatientsNewForm',
     fields: ['username','password','email'],

@@ -1,8 +1,7 @@
 import _ from 'lodash'
 import React, { Component } from 'react'
-import { withRouter } from 'react-router-dom'
+import { withRouter, Link } from 'react-router-dom'
 import { connect } from 'react-redux'
-import { Link } from 'react-router-dom'
 import { fetchReports, deleteReport } from '../actions'
 
 class ReportsIndex extends Component {
@@ -43,7 +42,6 @@ class ReportsIndex extends Component {
         </td>
       )
     }
-    return (<div>asdf</div>)
   }
   renderActions () {
     const reports = this.props.reports

@@ -1,9 +1,8 @@
 import _ from 'lodash'
 import React, { Component } from 'react'
-import { withRouter } from 'react-router-dom'
+import { withRouter, Link } from 'react-router-dom'
 import { connect } from 'react-redux'
 import { fetchReport } from '../actions/index'
-import { Link } from 'react-router-dom'
 
 class ReportsShow extends Component {
   componentWillMount () {

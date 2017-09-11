@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Field, FieldArray, reduxForm } from 'redux-form';
 import { createReport, fetchPatients } from '../actions/index';
-import {PropTypes} from 'prop-types';
+import { PropTypes } from 'prop-types';
 import { withRouter } from 'react-router-dom'
 import { connect } from "react-redux";
 
